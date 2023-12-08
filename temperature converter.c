@@ -5,66 +5,51 @@ int main ()
 
 {
     int x, y;
-    printf ("---------------------------------\n"); // Dashes
-    printf ("|     Temperature Converter     |\n"); // Title
-    printf ("---------------------------------\n"); // Dashes
 
+    printf("Choose one from below: \n");
+    printf("1. Celsius to Fahrenheit\n");
+    printf("2. Fahrenheit to Celsius\n");
 
-    printf("\n"); // New Line Gap
+    printf("\n");
 
-    printf("Choose one from below: \n"); // Title
-    printf("1. Celsius to Fahrenheit\n"); // Operations List that this converter can perform
-    printf("2. Fahrenheit to Celsius\n"); // Operations List that this converter can perform
-
-    printf("\n"); // New Line Gap
-
-    printf("-> "); // User Input
-    scanf("%d", &y); // Scan Function
-
-    if(y==1) // Celsius to Fahrenheit
+    printf("-> ");
+    scanf("%d", &y);
+    if(y==1)
     {
-        printf("\n");
-
-        printf("---------------------------\n");
-        printf("|  Celsius to Fahrenheit  |\n");
-        printf("---------------------------\n");
 
         printf("\n");
 
+        printf("Enter your celsius degree ");
         printf("-> ");
         scanf("%d",&x);
 
-        float formula = (x * 1.8) + 32; // formula or main function
+        float formula = (x * 1.8) + 32;
 
         printf("\n");
 
-        printf("%d degree Celsius in Fahrenheit is %f degree Fahrenheit\n",x,formula);
+        printf("%d degree celsius in fahrenheit is %f degree fahrenheit\n",x,formula);
 
         printf("\n");
     }
 
-    else if(y==2) // Fahrenheit to Celsius
+    else if(y==2)
     {
-        printf("\n");
-
-        printf("---------------------------\n");
-        printf("|  Fahrenheit to Celsius  |\n");
-        printf("---------------------------\n");
 
         printf("\n");
 
+        printf("Enter your fahrenheit degree ");
         printf("-> ");
         scanf("%d",&x);
 
-        float formula = (x - 32) * 0.555; // formula or main function
+        float formula = (x - 32) * 0.555;
 
         printf("\n");
 
-        printf("%d degree Fahrenheit in Celsius is %f degree Fahrenheit\n",x,formula);
+        printf("%d degree fahrenheit in celsius is %f degree fahrenheit\n",x,formula);
 
         printf("\n");
     }
 
     else
-        printf("The number you entered is not assigned with any Conversions. Enter a valid number!"); // error message code
+        printf("The number you entered is not assigned with any Conversions. Enter a valid number!");
 }
