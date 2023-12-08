@@ -18,8 +18,8 @@ int main ()
 
     printf("\n"); // New Line Gap
 
-    printf("-> "); // Answer input placeholder
-    scanf("%d", &y); // Memory address location
+    printf("-> "); // User Input
+    scanf("%d", &y); // Scan Function
 
     if(y==1) // Celsius to Fahrenheit
     {
