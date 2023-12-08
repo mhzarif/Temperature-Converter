@@ -20,7 +20,7 @@ int main ()
         printf("\n");
 
         printf("Enter your celsius degree ");
-        printf("-> ");
+        printf(">> ");
         scanf("%d",&x);
 
         float formula = (x * 1.8) + 32;
@@ -38,7 +38,7 @@ int main ()
         printf("\n");
 
         printf("Enter your fahrenheit degree ");
-        printf("-> ");
+        printf(">> ");
         scanf("%d",&x);
 
         float formula = (x - 32) * 0.555;
@@ -51,5 +51,7 @@ int main ()
     }
 
     else
+        printf("\n");
         printf("The number you entered is not assigned with any Conversions. Enter a valid number!");
+        printf("\n");
 }
